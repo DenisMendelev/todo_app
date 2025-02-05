@@ -33,7 +33,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      'no-console': 'warn',
+      'no-console': 'error',
     },
   },
 ];
