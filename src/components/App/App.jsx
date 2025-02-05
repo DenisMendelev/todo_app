@@ -44,7 +44,7 @@ function App() {
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
   };
-  console.log(handleFilterChange);
+
   const filteredTasks = tasks.filter((task) => {
     if (filter === 'all') return true;
     if (filter === 'active') return !task.isCompleted;
@@ -53,7 +53,7 @@ function App() {
   });
 
   const activeTasksCount = tasks.filter((task) => !task.isCompleted).length;
-  console.log(filteredTasks);
+
   return (
     <section className="todoapp">
       <header className="header">
