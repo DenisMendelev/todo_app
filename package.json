@@ -20,7 +20,8 @@
     "lint": "eslint . --config .eslintrc.mjs",
     "lint:fix": "eslint . --fix --config .eslintrc.mjs",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
