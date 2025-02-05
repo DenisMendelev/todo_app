@@ -53,7 +53,7 @@ function App() {
   });
 
   const activeTasksCount = tasks.filter((task) => !task.isCompleted).length;
-  console.log(filteredTasks);
+
   return (
     <section className="todoapp">
       <header className="header">

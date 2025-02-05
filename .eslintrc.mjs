@@ -1,13 +1,13 @@
-const js = require('@eslint/js');
-const globals = require('globals');
-const react = require('eslint-plugin-react');
-const reactHooks = require('eslint-plugin-react-hooks');
-const reactRefresh = require('eslint-plugin-react-refresh');
-const airbnb = require('eslint-config-airbnb');
-const prettier = require('eslint-config-prettier');
-const prettierPlugin = require('eslint-plugin-prettier');
+import js from '@eslint/js';
+import globals from 'globals';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import airbnb from 'eslint-config-airbnb';
+import prettier from 'eslint-config-prettier';
+import prettierPlugin from 'eslint-plugin-prettier';
 
-module.exports = [
+export default [
   { ignores: ['dist', 'node_modules'] },
   {
     files: ['**/*.{js,jsx}'],
