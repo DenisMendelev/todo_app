@@ -14,7 +14,7 @@ const Task = ({ task, onDelete, onEdit, onToggleComplete }) => {
         (currentTime - task.createdAt) / 1000 / 60
       );
       setTimeElapsed(timeDifference);
-    }, 60000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [task.createdAt]);
@@ -65,6 +65,17 @@ const Task = ({ task, onDelete, onEdit, onToggleComplete }) => {
         <button className="icon icon-edit" onClick={handleEditClick}></button>
         <button className="icon icon-destroy" onClick={onDelete}></button>
       </div>
+      {isEditing && (
+        <form onSubmit={handleEditSubmit}>
+          <input
+            type="text"
+            className="edit"
+            value={editedText}
+            onChange={handleEditChange}
+            autoFocus
+          />
+        </form>
+      )}
     </li>
   );
 };

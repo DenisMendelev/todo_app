@@ -1,4 +1,3 @@
-import {} from 'react';
 import PropTypes from 'prop-types';
 import './TaskList.css';
 import Task from '../Task/Task';

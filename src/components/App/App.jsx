@@ -51,7 +51,7 @@ function App() {
     if (filter === 'completed') return task.isCompleted;
     return true;
   });
-
+  console.log(filteredTasks);
   const activeTasksCount = tasks.filter((task) => !task.isCompleted).length;
 
   return (
